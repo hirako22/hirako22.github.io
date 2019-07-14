@@ -33,6 +33,29 @@
 
     img {float: right;}
     
+    .collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+    
   </style>
 </head>
 
@@ -45,7 +68,7 @@
     <a href="movies.html" style="padding: 14px 16px;">Movies</a>
   </div>
   
-  <img src="file.jpeg" style="width:300px;height:300px;margin-left:15px;">
+  <img src="file.jpeg" style="width:75%;height:75%;margin-left:15px;">
   <p>Here are some mathematical ramblings I just decided to throw up here. Some
     of these documents will be problems I have done to further my understanding, and others will be notes I've
     taken to manifest Feynman's adage that one does not understand something until they can explain it to
@@ -66,7 +89,8 @@
   <br>
   <h3>Mathematical preliminary objects, the precise definitions of which I keep forgetting.</h3>
   <p>When reading papers or starting a subject in graduate-level math, I find myself forgetting exact definitions
-    and intuitions. I have thuse compiled an <a target="_blank" href="terms.pdf">appendix</a>. So far (I see this list growing) I have basic abstract algebraic
+    and intuitions. I have thuse compiled an <a target="_blank" href="terms.pdf">appendix</a>. So far 
+    (I see this list growing) I have basic abstract algebraic
   objects, topology and manifolds, and differential forms done with field theory in mind.</p>
   <br>
   <h3>Some cool differential geometry problems</h3>
@@ -78,6 +102,7 @@
     <a target="_blank" href="EE376A.pdf">report</a>, and went a bit overboard.</p>
   <br>
   <h3>Quantum Groups</h3>
+  <img src="diagram.png" style="width:75%;height:75%;margin-left:15px;">
   <p>Here's a heavy item. The above alludes to quantum groups, notes of which are given 
     <a target="_blank" href="Quantum_Groups.pdf">here</a>. 
     These are notes taken during Prof. Daniel Bump's course on quantum groups. What is NOT in here is a precise 
@@ -106,5 +131,88 @@
     note-taking and these problems. 
     <a target="_blank" href="https://statweb.stanford.edu/~souravc/qft-lectures-combined.pdf">
     Here</a> are the notes and <a target="_blank" href="273.pdf">here</a> are the problems.</p>
+  
+  <br>
+  <h3>Recommended textbooks</h3>
+  <button class="collapsible">Algebraic Topology</button>
+<div class="content">
+  <p>Hatcher. Hatcher. Hatcher. Seriously. Hatcher is the bible for algebraic topology for a reason. Covers the
+  fundamental group, homology, cohomology, and higher homotopy groups.</p>
+</div>
+<button class="collapsible">Differential Geometry</button>
+<div class="content">
+  <p>John M. Lee's "Riemannian Manifolds"</p>
+</div>
+<button class="collapsible">Quantum Mechanics</button>
+<div class="content">
+  <p>David J. Griffiths' "Introduction to Quantum Mechanics"</p>
+</div>
+<button class="collapsible">Algebra</button>
+<div class="content">
+  <p>Dummit and Foote's "Abstract Algebra." Another holy bible. Covers groups, rings, fields, modules,
+  algebra</p>
+</div>
+<button class="collapsible">Quantum Groups</button>
+<div class="content">
+  <p>Christian Kassel's "Quantum Groups"</p><p>Ross Street's "Quantum Groups: A Path to Current Algebra"</p>
+</div>
+<button class="collapsible">Partial Differential Equations</button>
+<div class="content">
+  <p>Lawrence C. Evans' "Partial Differential Equations"</p>
+</div>
+<button class="collapsible">Algebraic Geometry</button>
+<div class="content">
+  <p>Ravi Vakil's "The Rising Sea"</p>
+</div>
+<button class="collapsible">Probability/Measure Theory</button>
+<div class="content">
+  <p>Stew N. Ethier's "The Doctrine of Chances"</p>
+  <p>Donald L. Cohn's "Measure Theory"</p>
+</div>
+<button class="collapsible">Computer Architecture</button>
+<div class="content">
+  <p>Yeah, yeah. This isn't math. But if you want to understand how a computer works on a hardware level, read
+  J. Clark Scott's "But How Do It Know? - the Basic Principles of Computers for Everyone"</p>
+</div>
+<button class="collapsible">Information Theory</button>
+<div class="content">
+  <p>You know how Claude Shannon invented a field of study in the frickin' 1900s, around 2.5 thousand years after
+  all other fields were created? Yeah. Here's a good textbook on it: "Elements of Information Theory" by
+  Thomas M. Cover and Joy A. Thomas.</p>
+</div>
+<button class="collapsible">Quantum Computation</button>
+<div class="content">
+  <p>Another holy bible. Michael Nielsen and Isaac Chuang's (Mike and Ike's) "Quantum Computation and Quantum
+    Information"</p>
+  <p>BUT ALSO! Kenneth W. Regan and Richard Lipton's "Quantum Algorithms Via Linear Algebra: A Primer" is great
+  as well. It starts out a bit slow, but explains a lot of stuff really well.</p>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+  </script>
+  
+  <br>
+  <h2>Coming Soon...(long term)</h2>
+  <h3>Homotopy theory/Higher algebraic topology</h3>
+  <br>
+  <h3>Algebraic Geometry</h3>
+  <br>
+  <h3>J-holomorphic curves and quantum cohomology</h3>
+  <br>
+  <h3>Knot Floer homology</h3>
   
 </body>
