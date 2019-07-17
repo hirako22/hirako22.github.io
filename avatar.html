@@ -34,10 +34,27 @@ img {
       object-fit:scale-down;
     }
     
+    .parallax {
+  /* The image used */
+  background-image: url("avatar.png");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    
   </style>
 </head>
 
 <body>
+  <div class="parallax"></div>
+
+<div>
   
   <h1>The Top 11 Best Avatar: the Last Airbender Episodes</h1>
   
@@ -134,4 +151,5 @@ img {
 <hr>
   <a href="movies.html"><img src="tab.jpg" class="center" style="width:60px;object-fit:scale-down;"</a>
   </body>
+  </div>
 </html>
