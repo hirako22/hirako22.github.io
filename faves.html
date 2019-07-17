@@ -1,1 +1,75 @@
-<!doct>
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="tabb.jpg">
+  <style>
+    body {background-color:#0C090A;}
+    h1 {color:white;}
+    h3 {color:white;}
+    p {color:silver;}
+    li {color:silver;}
+    
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 0px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width:250px;
+   height:250px;
+/*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
+    object-fit:scale-down;
+}
+    
+    @media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+    
+    img {
+      width: 47px;
+      object-fit:scale-down;
+    }
+    
+  </style>
+</head>
+
+<body>
+  
+  <h1>Alec Lau's Top 11 Favorite Movies of All Time</h1>
+  
+  <p>Here are my top 11 favorite movies of all time. Talk about obsession. These 11 (and Roman Holiday) are more like
+  posession. The reason I nixed Roman Holiday is because there are more parts in it that I find tiresome than in any
+    of these (the number of tiresome parts is 1 - Greg Peck first meets with his manager). Also, 11 is already a stretch
+  from everyone's favorite "top" number. 11 is better. It is more aesthetic, it is prime, it symbolizes going one step
+  beyond, it allows me to omit one less amazing masterpiece so good that, when considering this work, I am thankful to
+  be alive just for the experience of these movies. When it came to making this list, all of these movies are no-brainers.
+  The problem was, a few movies extra were also no brainers. Thus, I applied logic in place of my feelings (something I
+    rarely do for movies) and decided which movies best deserve their place amongst this unfairly exclusive list.</p>
+  
+  <div class="column">
+    <img src="amazing.jpg">
+    <img src="br.jpg">
+    <img src="jb.jpg">
+    <img src="seven.jpg">
+    <img src="superbad.jpg">
+    <img src="cr.jpg">
+    <img src="social.jpg">
+    <img src="dk.jpg">
+    <img src="sw.jpg">
+    <img src="dragon.jpg">
+    <img src="sv.jpg">
+  </div>
+</body>
+</html>
