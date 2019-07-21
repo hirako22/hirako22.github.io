@@ -9,6 +9,33 @@
     p {color:silver;}
     li {color:silver;}
     
+    .column {
+  flex: 50%;
+  padding: 0 0px;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width:250px;
+   height:250px;
+/*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
+    object-fit:scale-down;
+}
+    
+    @media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+    
     img {
       width: 47px;
       object-fit:scale-down;
@@ -37,7 +64,7 @@
     <li>Romeo + Juliet (1996)</li>
   </ul>
   
-  <h3>Movies I like but everyone hates<h/3>
+  <h3>Movies I like but everyone hates<h/3><br>
   <img src="sasquatch.jpg"><p>Sasquatch Mountain is by no means a perfect movie, but I find it extremely not bad, with
   many really quite good ideas. I first saw it when it premiered on TV(!) in 2006, and was mesmerized by the atmosphere.
   It stayed in my memory for many years until reseeing it a bunch of times in 2019. I highly encourage anyone to check
