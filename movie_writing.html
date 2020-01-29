@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" href="tabb.jpg">
+  <style>
+    body {background-color:#0C090A;}
+    h1 {color:white;}
+    h3 {color:white;}
+    p {color:silver;}
+    li {color:silver;}
+    
+    .topnav {
+  background-color: #000000;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 12px;
+}
+.topnav a:hover {
+  background-color: #7babba;
+  color: black;
+}
+.topnav a.active {
+  background-color: #335eff;
+  color: white;
+}
+    
+    #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #000099;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #7babba;
+}
 
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 0px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width:250px;
+   height:250px;
+
+/*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
+    object-fit:scale-down;
+}
+    
+    @media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+    
+    img {
+      width: 47px;
+      object-fit:scale-down;
+    }
+    
+  </style>
+</head>
+
+<body>
+  
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+  
+  <a href="https://hirako22.github.io/"><img src="tab.jpg" style="padding:0px 0px;float:left;"></a>
+  <div class="topnav">
+    <a href="making.html" style="padding: 14px 16px;">Making</a>
+    <a href="math.html" style="padding: 14px 16px;">Mathematics</a>
+    <a class="active" href="movies.html" style="padding: 14px 16px;">Movies</a>
+  </div>
+  
+  <h2>Movies and Movie Discussion: An Axiomatic Approach</h2>
+  
+  <p>
+    The relationship between the public and and movies is a complicated one. I have thus compiled a list of axioms to assist
+    in the discussion of movies:
+  </p><ol>
+  <li>A movie is a form of communication involving sight and sound intended to be shown to any arbitrary person.</li>
+  <li>There are many different ways of making movies.</li>
+  <li>Different movies make different people feel different ways.</li>
+</ol>
+  <p>
+    
+  </p>
+  
+  </body>
+</html>
