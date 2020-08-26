@@ -57,7 +57,37 @@
 #myBtn:hover {
   background-color: #7babba;
 }
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 0px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width:250px;
+   height:250px;
+
+/*Scale down will take the necessary specified space that is 100px x 100px without stretching the image*/
+    object-fit:scale-down;
+}
     
+    @media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
   </style>
 </head>
 
@@ -81,7 +111,7 @@ function topFunction() {
 }
 </script>
   
-  <a href="https://hirako22.github.io/"><img src="tab.jpg" style="padding:0px 0px;float:left;width:47px;
+  <a href="https://hirako22.github.io/"><img src="tab.jpg" style="padding:0px 0px;float:left;width: 47px;
       object-fit:scale-down;"></a>
   <div class="topnav">
     <a href="making.html" style="padding: 14px 16px;">Making</a>
@@ -92,51 +122,51 @@ function topFunction() {
   
   <p> </p>
   
-  <div class="column">
-    <img src="drawing/kiriyama.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/ariana.JPG" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/benny.JPG" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/audrey.JPG" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/khaled.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/aamnah.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/harrison.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/hung.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/andrea.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/kylie.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/junha.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/peter.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/sarah.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/marco.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/ellen.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/jack.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-  <!--</div>
  <img src="drawing/joseph_brick.jpg" width:300px; height:270px;>
- <img src="drawing/pixies.jpg" width:300px; height:270px;>
  <img src="drawing/d.jpg" width:300px; height:260px;>
+  <div class="column">
+    <img src="drawing/kiriyama.jpg">
+    <img src="drawing/ariana.JPG">
+    <img src="drawing/benny.JPG">
+    <img src="drawing/audrey.JPG">
+    <img src="drawing/khaled.jpg">
+    <img src="drawing/aamnah.jpg">
+    <img src="drawing/harrison.jpg">
+    <img src="drawing/hung.jpg">
+    <img src="drawing/andrea.jpg">
+    <img src="drawing/kylie.jpg">
+    <img src="drawing/junha.jpg">
+    <img src="drawing/peter.jpg">
+    <img src="drawing/sarah.jpg">
+    <img src="drawing/marco.jpg">
+    <img src="drawing/ellen.jpg">
+    <img src="drawing/jack.jpg">
+    <img src="drawing/tupac_pencil.jpg">
+    <img src="drawing/audrey_pencil.jpg">
+  </div>
+ <img src="drawing/pixies.jpg" width:300px; height:270px;>
  <img src="drawing/edgar.jpg" width:300px; height:300px;>
-  <div class="column">-->
-    <img src="drawing/kam.jpeg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/mable.jpeg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/ryan.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/andrew.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/ada.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/woody.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/tristan.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/alexs.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/alexb.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/kara.jpeg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/peggy.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/vamsi.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/harry.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/angela.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/alex.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/nathan.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/david.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/osanna.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/tupac_pencil.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/audrey_pencil.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/elliot_pencil.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
-    <img src="drawing/vincent_pencil.jpg" margin-top: 8px; vertical-align: middle; width:250px; height:250px; object-fit:scale-down;>
+  <div class="column">
+    <img src="drawing/kam.jpeg">
+    <img src="drawing/mable.jpeg">
+    <img src="drawing/ryan.jpg">
+    <img src="drawing/andrew.jpg">
+    <img src="drawing/ada.jpg">
+    <img src="drawing/woody.jpg">
+    <img src="drawing/tristan.jpg">
+    <img src="drawing/alexs.jpg">
+    <img src="drawing/alexb.jpg">
+    <img src="drawing/kara.jpeg">
+    <img src="drawing/peggy.jpg">
+    <img src="drawing/vamsi.jpg">
+    <img src="drawing/harry.jpg">
+    <img src="drawing/angela.jpg">
+    <img src="drawing/alex.jpg">
+    <img src="drawing/nathan.jpg">
+    <img src="drawing/david.jpg">
+    <img src="drawing/osanna.jpg">
+    <img src="drawing/elliot_pencil.jpg">
+    <img src="drawing/vincent_pencil.jpg"
   </div>
   
 </body>
