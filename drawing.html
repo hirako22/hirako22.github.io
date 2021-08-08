@@ -93,7 +93,6 @@
   
   <meta charset="utf-8">
     <title>Image Slideshow Animation | CodingNepal</title>
-    
   
 </head>
 
@@ -119,7 +118,7 @@ var indexValue = 0;
       function slideShow(){
         setTimeout(slideShow, 500);
         var x;
-        const img = document.querySelectorAll("img");
+        const img = document.querySelectorAll("div.styleVsEmotion > img");
         for(x = 0; x < img.length; x++){
           img[x].style.display = "none";
         }
@@ -131,10 +130,9 @@ var indexValue = 0;
 </script>
   
   <div class="styleVsEmotion">
-      <div class="images">
         <img src="drawing/style.jpg">
         <img src="drawing/emotion.jpg">
-      </div>
+  </div>
   
   <a href="https://hirako22.github.io/"><img src="tab.jpg" style="padding:0px 0px;float:left;width: 47px;
       object-fit:scale-down;"></a>
