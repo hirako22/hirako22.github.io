@@ -98,11 +98,16 @@
     .container{
     text-align: center;
 }
+    
 .category{
     display: inline-block;
     height: 250px;
     background: #ccc;
     margin: 5px;
+}
+    
+    .first-div{
+  display: inline-block;
 }
     
   </style>
@@ -139,7 +144,7 @@ var indexValue = 0;
         }
         indexValue++;
         if(indexValue > img.length){indexValue = 1}
-        img[indexValue -1].style.display = "block";
+        img[indexValue -1].style.display = "inline-block";
       }
       slideShow();
 </script>
@@ -174,12 +179,13 @@ var indexValue = 0;
   
   </p>
   
+  <div class="first-div">
       <div class="styleVsEmotion">
         <img src="drawing/style.jpg" height="400">
         <img src="drawing/emotion.jpg" height="400">
       </div>
-  
         <img src="drawing/kafka.jpg" height="400">
+  </div>
   
   
   <p> </p>
