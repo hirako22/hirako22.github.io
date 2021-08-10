@@ -134,11 +134,12 @@ var indexValue = 0;
         setTimeout(slideShow, 1000);
         var x;
         const img = document.querySelectorAll("div.styleVsEmotion > img");
-        for(x = 0; x < img.length; x++){
+        img[-1].style.display = "block";
+        for(x = 0; x < img.length-1; x++){
           img[x].style.display = "none";
         }
         indexValue++;
-        if(indexValue > img.length){indexValue = 1}
+        if(indexValue > img.length-1){indexValue = 1}
         img[indexValue -1].style.display = "block";
       }
       slideShow();
@@ -175,11 +176,11 @@ var indexValue = 0;
   </p>
   
       <div class="styleVsEmotion">
-        <img src="drawing/style.jpg" style="left:33.33%">
-        <img src="drawing/emotion.jpg" style="left:33.33%">
+        <img src="drawing/style.jpg">
+        <img src="drawing/emotion.jpg">
+        <img src="drawing/kafka.jpg">
       </div>
   
-      <img src="drawing/kafka.jpg" style="right:33.33%">
   
   <p> </p>
   
