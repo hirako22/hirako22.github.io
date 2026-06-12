@@ -6,40 +6,119 @@
     body {background-color:#0C090A;}
     h1 {color:white;}
     h3 {color:white;}
+    h4 {color:white;}
     p {color:silver;}
     li {color:silver;}
-    
+   
     .topnav {
-  background-color: #000000;
-  overflow: hidden;
-}
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
-  border-radius: 12px;
-}
-.topnav a:hover {
-  background-color: #7babba;
-  color: black;
-}
-.topnav a.active {
-  background-color: #335eff;
-  color: white;
-}
-    
+      background-color: #000000;
+      overflow: hidden;
+    }
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      text-decoration: none;
+      font-size: 17px;
+      border-radius: 12px;
+    }
+    .topnav a:hover {
+      background-color: #7babba;
+      color: black;
+    }
+    .topnav a.active {
+      background-color: #335eff;
+      color: white;
+    }
+   
     img {
       width: 47px;
       object-fit:scale-down;
     }
-    
+
+    /* Books side-by-side */
+    .books-wrapper {
+      display: flex;
+      gap: 40px;
+    }
+
+    .books-wrapper .book-column {
+      flex: 1;
+    }
+
+    /* Slideshow styles */
+    .slideshows-wrapper {
+      display: flex;
+      gap: 20px;
+      max-width: 1400px;
+      margin: 30px auto 0;
+      padding: 0 10px;
+    }
+
+    .slideshow-column {
+      flex: 1;
+    }
+
+    .slideshow-container {
+      position: relative;
+    }
+
+    .slideshow-container img {
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .slide {
+      display: none;
+    }
+
+    .caption {
+      text-align: center;
+      padding: 8px 12px;
+      color: #ccc;
+      font-size: 15px;
+      font-style: italic;
+    }
+
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+      background-color: #f1f1f1;
+      color: black;
+    }
+
+    @media (max-width: 768px) {
+      .slideshows-wrapper {
+        flex-direction: column;
+      }
+      .books-wrapper {
+        flex-direction: column;
+        gap: 0;
+      }
+    }
   </style>
 </head>
 
 <body>
-  
+ 
   <a href="https://hirako22.github.io/"><img src="tab.jpg" style="padding:0px 0px;float:left;"></a>
   <div class="topnav">
     <a href="making.html" style="padding: 14px 16px;">Making</a>
@@ -47,17 +126,17 @@
     <a href="movies.html" style="padding: 14px 16px;">Movies</a>
     <a href="art.html" style="padding: 14px 16px;">Art</a>
   </div>
-  
+ 
   <h1></h1>
   <h3>Alec Lau's Website</h3>
 
-  <p style="color:silver;">For a while I've thought that having a website to share some stuff useful to people including 
+  <p style="color:silver;">For a while I've thought that having a website to share some stuff useful to people including
     me would be a good idea, so here it is.</p>
-  
+ 
   <p style="color:silver;">My primary interests are tinkering, math, physics, movies,
-    taekwondo, parkour, geography, and art. I do the first three professionally now, and 
+    taekwondo, parkour, geography, and art. I do the first three professionally now, and
     have posted some of my old (non-professional) pet projects here.</p>
-  
+ 
   <p>I also do projects in math. These days my main interests are in topology,
   algebra, and theoretical condensed matter physics, as well as pretty much any math related to the name
     "Witten." As one can probably figure out, I also posted some art and a list of my favorite movies.
@@ -65,13 +144,13 @@
 
 
   <p>Links:</p>
-  
+ 
   <ul style="list-style-type:none;">
     <li>My <a href="Resume.pdf" target="_blank">resume</a></li>
     <li><a href="http://www.cosmoetica.com/cinegreatfilms.htm" target="_blank">Movie thoughts to consider</a>
     <li><a href="https://hackaday.io/projects" target="_blank">Hackaday</a></li>
     <li><a href="https://www.scottaaronson.com/blog/" target="_blank">Scott Aaronson</a>'s blog, with great gems such
-      as <a href="https://www.scottaaronson.com/blog/?p=2494" target="_blank">this</a> and 
+      as <a href="https://www.scottaaronson.com/blog/?p=2494" target="_blank">this</a> and
       <a href="https://scottaaronson.blog/?p=6599" target="_blank">this</a></li>
     <li><a href="https://mason.gmu.edu/~rhanson/home.html" target="_blank">Robin Hanson</a></li>
     <li>David Tong's <a href="http://www.damtp.cam.ac.uk/user/tong/teaching.html" target="_blank">excellent lectures</a></li>
@@ -98,19 +177,84 @@
       <a href="https://www.saatchiart.com/philippevignalartiste" target="_blank">Philippe Vignal</a>,
       <a href="https://linktr.ee/samdoesarts" target="_blank">Sam Yang</a>,
     </p>
-    <p>Novels:</p>
-      <ul style="list-style-type:none;">
-        <li><i>The Count of Monte Cristo</i> &mdash; Dumas</li>
-        <li><i>Gravity’s Rainbow</i> &mdash; Pynchon</li>
-        <li><i>Frankenstein</i> &mdash; Shelley</li>
-        <li><i>A Tree Grows in Brooklyn</i> &mdash; Smith</li>
-        <li><i>Suttree</i> &mdash; McCarthy</li>
-        <li><i>The Adventures of Huckleberry Finn</i> &mdash; Twain</li>
-        <li><i>A Christmas Carol</i> &mdash; Dickens</li>
-        <li><i>Dracula</i> &mdash; Stoker</li>
-        <li><i>Dreamer</i> &mdash; Johnson</li>
-        <li><i>The Metamorphosis</i> &mdash; Kafka</li>
-      </ul>
-  
+
+    <div class="books-wrapper">
+      <div class="book-column">
+        <p>Novels:</p>
+        <ul style="list-style-type:none;">
+          <li><i>The Count of Monte Cristo</i> &mdash; Dumas</li>
+          <li><i>Gravity's Rainbow</i> &mdash; Pynchon</li>
+          <li><i>Frankenstein</i> &mdash; Shelley</li>
+          <li><i>A Tree Grows in Brooklyn</i> &mdash; Smith</li>
+          <li><i>Suttree</i> &mdash; McCarthy</li>
+          <li><i>The Adventures of Huckleberry Finn</i> &mdash; Twain</li>
+          <li><i>A Christmas Carol</i> &mdash; Dickens</li>
+          <li><i>Dracula</i> &mdash; Stoker</li>
+          <li><i>Dreamer</i> &mdash; Johnson</li>
+          <li><i>The Metamorphosis</i> &mdash; Kafka</li>
+        </ul>
+      </div>
+      <div class="book-column">
+        <p>Nonfiction:</p>
+        <ul style="list-style-type:none;">
+          <li></li>
+        </ul>
+      </div>
+    </div>
+
+  <!-- Slideshows -->
+  <div class="slideshows-wrapper" id="wrapper"></div>
+
+  <script>
+  let slideIndex = [];
+
+  fetch('slides.json')
+    .then(res => res.json())
+    .then(slideshows => {
+      const wrapper = document.getElementById('wrapper');
+
+      slideshows.forEach((show, idx) => {
+        slideIndex.push(1);
+
+        const col = document.createElement('div');
+        col.className = 'slideshow-column';
+
+        let html = `<p>${show.title}</p><div class="slideshow-container">`;
+
+        show.images.forEach(img => {
+          const src = `${show.folder}/${img.file}`;
+          const caption = img.caption ? `<div class="caption">${img.caption}</div>` : '';
+          html += `<div class="slide slide-${idx}"><img src="${src}">${caption}</div>`;
+        });
+
+        if (show.images.length > 1) {
+          html += `<a class="prev" onclick="plusSlides(-1, ${idx})">&#10094;</a>`;
+          html += `<a class="next" onclick="plusSlides(1, ${idx})">&#10095;</a>`;
+        }
+
+        html += '</div>';
+        col.innerHTML = html;
+        wrapper.appendChild(col);
+
+        showSlides(1, idx);
+      });
+    });
+
+  function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+  }
+
+  function showSlides(n, no) {
+    const slides = document.getElementsByClassName('slide-' + no);
+    if (slides.length === 0) return;
+    if (n > slides.length) slideIndex[no] = 1;
+    if (n < 1) slideIndex[no] = slides.length;
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = 'none';
+    }
+    slides[slideIndex[no] - 1].style.display = 'block';
+  }
+  </script>
+
 </body>
 </html>
