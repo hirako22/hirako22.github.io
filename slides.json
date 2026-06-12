@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Slideshow 1",
+    "folder": "slideshow1",
+    "images": [
+      { "file": "photo1.jpg", "caption": "Optional caption here" },
+      { "file": "photo2.png" }
+    ]
+  },
+  {
+    "title": "Slideshow 2",
+    "folder": "slideshow2",
+    "images": [
+      { "file": "img1.jpg" },
+      { "file": "img2.jpg", "caption": "Another caption" }
+    ]
+  }
+]
