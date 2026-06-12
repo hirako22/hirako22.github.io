@@ -1,14 +1,32 @@
 [
   {
-    "title": "Slideshow 1",
+    "title": "Albums",
     "folder": "slideshow1",
     "images": [
-      { "file": "photo1.jpg", "caption": "Optional caption here" },
-      { "file": "photo2.png" }
+      { "file": "Amnesiac.png"},
+      { "file": "BlueMorpho.jpg"},
+      { "file": "Bossanova.jpg"},
+      { "file": "BuddyHolly.jpg"},
+      { "file": "ComeOnPilgrim.jpg"},
+      { "file": "DirectHits.png"},
+      { "file": "Doolittle.jpg"},
+      { "file": "KidA.png"},
+      { "file": "MusicForInstallations.webp"},
+      { "file": "musicOfChad.jpg"},
+      { "file": "MyLifeInTheBush.jpg"},
+      { "file": "OriginOfSymmetry.png"},
+      { "file": "SelectedAmbientWorks.png"},
+      { "file": "Stankonia.jpg"},
+      { "file": "StrangeDesire.jpg"},
+      { "file": "SurferRosa.jpeg"},
+      { "file": "TheBetterLife.jpeg"},
+      { "file": "TrompeLeMonde.jpg"},
+      { "file": "Vanities.jpg"},
+      { "file": "YoureAWoman.jpg"}
     ]
   },
   {
-    "title": "Slideshow 2",
+    "title": "Countries I Love",
     "folder": "slideshow2",
     "images": [
       { "file": "img1.jpg" },
