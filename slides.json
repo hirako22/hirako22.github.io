@@ -2,7 +2,7 @@
   {
     "title": "Albums",
     "folder": "slideshow1",
-    "useFilenameAsCaption": true,
+    "useFilenameAsCaption": false,
     "images": [
       { "file": "Amnesiac.png"},
       { "file": "BlueMorpho.jpg"},
