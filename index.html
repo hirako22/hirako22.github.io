@@ -230,8 +230,14 @@
 
         show.images.forEach(img => {
           const src = `${show.folder}/${img.file}`;
-          const caption = img.caption ? `<div class="caption">${img.caption}</div>` : '';
-          html += `<div class="slide slide-${idx}"><img src="${src}">${caption}</div>`;
+          let caption = '';
+          if (img.caption) {
+            caption = img.caption;
+          } else if (show.useFilenameAsCaption) {
+            caption = img.file.replace(/\.[^.]+$/, '');
+          }
+          const captionHTML = caption ? `<div class="caption">${caption}</div>` : '';
+          html += `<div class="slide slide-${idx}"><img src="${src}">${captionHTML}</div>`;
         });
 
         if (show.images.length > 1) {
