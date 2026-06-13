@@ -28,9 +28,24 @@
   {
     "title": "Countries I Love",
     "folder": "slideshow2",
+    "useFilenameAsCaption": true,
     "images": [
-      { "file": "img1.jpg" },
-      { "file": "img2.jpg", "caption": "Another caption" }
+      { "file": "Benin.jpg" },
+      { "file": "Bhutan.jpg", "caption": "Bhutan" },
+      { "file": "Canada.jpg" },
+      { "file": "China.jpg" },
+      { "file": "Comoros.jpg" },
+      { "file": "Gabon.jpg" },
+      { "file": "Japan.jpg" },
+      { "file": "Kazakhstan.jpg" },
+      { "file": "Kenya.jpg" },
+      { "file": "Korea.jpg" },
+      { "file": "Kyrgyzstan.jpg" },
+      { "file": "Mauritania.jpg" },
+      { "file": "Mexico.jpg" },
+      { "file": "Thailand.jpg" },
+      { "file": "Togo.jpg" },
+      { "file": "Turkmenistan.jpg" },
     ]
   }
 ]
