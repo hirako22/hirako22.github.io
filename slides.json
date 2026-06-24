@@ -4,7 +4,7 @@
     "folder": "slideshow1",
     "useFilenameAsCaption": false,
     "images": [
-      { "file": "Amnesiac.png"},
+      { "file": "Amnesiac.png", "link": "https://open.spotify.com/album/1HrMmB5useeZ0F5lHrMvl0?si=dFjFaLOYQyy_DwmDTN0X-Q"},
       { "file": "BlueMorpho.jpg"},
       { "file": "Bossanova.jpg"},
       { "file": "BuddyHolly.jpg"},
