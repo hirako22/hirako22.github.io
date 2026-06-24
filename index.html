@@ -91,6 +91,7 @@
       transition: 0.6s ease;
       border-radius: 0 3px 3px 0;
       user-select: none;
+      z-index: 2;
     }
 
     .next {
@@ -176,7 +177,7 @@
       <a href="https://linktr.ee/samdoesarts" target="_blank">Sam Yang</a>,
     </p>
 
-    
+   
         <p>Novels:</p>
         <ul style="list-style-type:none;">
           <li><i>The Count of Monte Cristo</i> &mdash; Dumas</li>
@@ -228,7 +229,10 @@
             caption = img.file.replace(/\.[^.]+$/, '');
           }
           const captionHTML = caption ? `<div class="caption">${caption}</div>` : '';
-          html += `<div class="slide slide-${idx}"><img src="${src}">${captionHTML}</div>`;
+          const imgHTML = img.link
+            ? `<a href="${img.link}" target="_blank" rel="noopener noreferrer"><img src="${src}"></a>`
+            : `<img src="${src}">`;
+          html += `<div class="slide slide-${idx}">${imgHTML}${captionHTML}</div>`;
         });
 
         if (show.images.length > 1) {
